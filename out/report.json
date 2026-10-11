@@ -1,0 +1,338 @@
+{
+ "seed": 1,
+ "uploads": 47,
+ "held": 6,
+ "accounts": 13,
+ "stats": {
+  "frame_checks": 246913,
+  "recordings": 47,
+  "all_pairs": 1081,
+  "candidate_pairs": 139,
+  "seconds": 6.4
+ },
+ "duplicates": [
+  {
+   "orig": "rec-006",
+   "copy": "rec-043",
+   "rate": 1.0,
+   "offset_s": 0.0,
+   "overlap_s": 145.0,
+   "chunks": 28,
+   "inliers": 28,
+   "ncc": 0.993,
+   "same_account": false
+  },
+  {
+   "orig": "rec-007",
+   "copy": "rec-046",
+   "rate": 1.0,
+   "offset_s": 29.5,
+   "overlap_s": 140.0,
+   "chunks": 27,
+   "inliers": 27,
+   "ncc": 0.997,
+   "same_account": false
+  },
+  {
+   "orig": "rec-007",
+   "copy": "rec-047",
+   "rate": 1.125,
+   "offset_s": 55.69,
+   "overlap_s": 125.0,
+   "chunks": 24,
+   "inliers": 24,
+   "ncc": 0.952,
+   "same_account": false
+  },
+  {
+   "orig": "rec-014",
+   "copy": "rec-042",
+   "rate": 1.0,
+   "offset_s": 0.0,
+   "overlap_s": 135.0,
+   "chunks": 26,
+   "inliers": 26,
+   "ncc": 0.997,
+   "same_account": false
+  },
+  {
+   "orig": "rec-023",
+   "copy": "rec-044",
+   "rate": 1.0,
+   "offset_s": 0.0,
+   "overlap_s": 195.0,
+   "chunks": 38,
+   "inliers": 38,
+   "ncc": 0.998,
+   "same_account": false
+  },
+  {
+   "orig": "rec-038",
+   "copy": "rec-045",
+   "rate": 0.791,
+   "offset_s": 0.005,
+   "overlap_s": 180.0,
+   "chunks": 35,
+   "inliers": 35,
+   "ncc": 0.948,
+   "same_account": true
+  },
+  {
+   "orig": "rec-046",
+   "copy": "rec-047",
+   "rate": 1.123,
+   "offset_s": 26.258,
+   "overlap_s": 100.0,
+   "chunks": 20,
+   "inliers": 19,
+   "ncc": 0.945,
+   "same_account": false
+  }
+ ],
+ "rejected": [
+  {
+   "id": "rec-021",
+   "reasons": [
+    [
+     "LIGHT",
+     "too dark: median brightness 0.14 (needs 0.19)"
+    ]
+   ]
+  },
+  {
+   "id": "rec-026",
+   "reasons": [
+    [
+     "HANDS",
+     "hands visible in 10% of working time (needs 50%); longest gap 00:12-01:59"
+    ]
+   ]
+  },
+  {
+   "id": "rec-027",
+   "reasons": [
+    [
+     "STEADY",
+     "camera shake in 15 of 15 10-second windows; worst 00:10-00:20 at 0.80 rad/s (limit 0.25)"
+    ]
+   ]
+  }
+ ],
+ "idle": [
+  {
+   "id": "rec-020",
+   "idle": [
+    [
+     142.5,
+     273.75
+    ]
+   ]
+  },
+  {
+   "id": "rec-041",
+   "idle": [
+    [
+     90.0,
+     197.5
+    ]
+   ]
+  }
+ ],
+ "site_aliases": [
+  {
+   "place": "place-01",
+   "sites": [
+    "H-104",
+    "H-188"
+   ],
+   "accounts": [
+    "acct-104",
+    "acct-188"
+   ],
+   "evidence": "rec-001 (H-188) and rec-017 (H-104) share 42% of views"
+  },
+  {
+   "place": "place-02",
+   "sites": [
+    "H-102",
+    "H-103"
+   ],
+   "accounts": [
+    "acct-102",
+    "acct-103"
+   ],
+   "evidence": "rec-011 (H-102) and rec-041 (H-103) share 57% of views"
+  },
+  {
+   "place": "place-04",
+   "sites": [
+    "S-301",
+    "S-302",
+    "S-303"
+   ],
+   "accounts": [
+    "acct-108",
+    "acct-109",
+    "acct-110"
+   ],
+   "evidence": "rec-009 (S-302) and rec-030 (S-301) share 56% of views"
+  }
+ ],
+ "same_device": [
+  {
+   "accounts": [
+    "acct-104",
+    "acct-188"
+   ],
+   "distance": 0.87,
+   "places": [
+    "place-01"
+   ],
+   "recordings": 3,
+   "action": "REVIEW: one phone on two accounts (rule: one account per person)"
+  }
+ ],
+ "shared_place": [
+  {
+   "accounts": [
+    "acct-102",
+    "acct-103"
+   ],
+   "distance": 48.1,
+   "places": [
+    "place-02"
+   ],
+   "action": "OK: different phones in one place (household or coworkers); counts as one place for diversity caps"
+  },
+  {
+   "accounts": [
+    "acct-108",
+    "acct-109"
+   ],
+   "distance": 46.0,
+   "places": [
+    "place-04"
+   ],
+   "action": "OK: different phones in one place (household or coworkers); counts as one place for diversity caps"
+  },
+  {
+   "accounts": [
+    "acct-108",
+    "acct-110"
+   ],
+   "distance": 28.2,
+   "places": [
+    "place-04"
+   ],
+   "action": "OK: different phones in one place (household or coworkers); counts as one place for diversity caps"
+  },
+  {
+   "accounts": [
+    "acct-109",
+    "acct-110"
+   ],
+   "distance": 38.9,
+   "places": [
+    "place-04"
+   ],
+   "action": "OK: different phones in one place (household or coworkers); counts as one place for diversity caps"
+  }
+ ],
+ "manifest": {
+  "sow": {
+   "name": "household + workplace manipulation, egocentric",
+   "hours": 1.5,
+   "place_cap": 0.2,
+   "person_cap": 0.15
+  },
+  "naive": {
+   "recordings": 30,
+   "usable_hours": 1.49,
+   "places": 9,
+   "top_place": "place-04",
+   "top_place_share": 0.277,
+   "top_person": "acct-102",
+   "top_person_share": 0.108,
+   "duplicates_inside": [],
+   "short_of_target_h": 0.01,
+   "claimed_places": 13,
+   "claimed_hours": 1.52
+  },
+  "checked": {
+   "recordings": 30,
+   "usable_hours": 1.51,
+   "places": 9,
+   "top_place": "place-02",
+   "top_place_share": 0.197,
+   "top_person": "acct-102",
+   "top_person_share": 0.107,
+   "duplicates_inside": [],
+   "short_of_target_h": 0.0
+  }
+ },
+ "money": {
+  "naive_usd": 13.05,
+  "paid_usd": 11.15,
+  "dup_usd": 1.44,
+  "idle_usd": 0.46
+ },
+ "heldout": {
+  "duplicates": {
+   "tp": 135,
+   "fp": 0,
+   "fn": 0
+  },
+  "copies_held": {
+   "held": 120,
+   "of": 120
+  },
+  "quality": {
+   "tp": 60,
+   "fp": 0,
+   "fn": 0
+  },
+  "idle": {
+   "tp": 40,
+   "fp": 0,
+   "fn": 0
+  },
+  "idle_err_s": 8.102659669980397,
+  "same_place_pairs": {
+   "tp": 2047,
+   "fp": 0,
+   "fn": 0
+  },
+  "site_aliases": {
+   "tp": 60,
+   "fp": 0,
+   "fn": 0
+  },
+  "same_device": {
+   "tp": 20,
+   "fp": 0,
+   "fn": 0
+  },
+  "money": {
+   "naive_usd": 270.51000000000005,
+   "checked_usd": 233.44999999999996,
+   "dup_usd": 29.669999999999998,
+   "idle_usd": 7.430000000000001
+  },
+  "baselines": {
+   "file_hash": {
+    "tp": 0,
+    "fp": 0,
+    "fn": 135
+   },
+   "frame_overlap": {
+    "tp": 78,
+    "fp": 2157,
+    "fn": 57
+   }
+  },
+  "pairs": {
+   "all": 22590,
+   "compared": 3006
+  }
+ }
+}
